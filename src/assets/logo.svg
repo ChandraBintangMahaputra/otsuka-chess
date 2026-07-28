@@ -1,0 +1,39 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Otsuka Chess">
+  <defs>
+    <linearGradient id="oc-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6dc96" />
+      <stop offset="0.5" stop-color="#e9b94e" />
+      <stop offset="1" stop-color="#b9832b" />
+    </linearGradient>
+    <radialGradient id="oc-inner" cx="0.5" cy="0.38" r="0.7">
+      <stop offset="0" stop-color="#161a24" />
+      <stop offset="1" stop-color="#0a0c12" />
+    </radialGradient>
+  </defs>
+
+  <!-- badge -->
+  <circle cx="60" cy="60" r="56" fill="url(#oc-inner)" stroke="url(#oc-gold)" stroke-width="5" />
+  <circle cx="60" cy="60" r="47" fill="none" stroke="rgba(233,185,78,0.35)" stroke-width="1.5" />
+
+  <!-- siluet kuda (konsisten dengan bidak 3D) -->
+  <path
+    d="M81.7 92 L42.3 92 L47.7 85.9
+       Q45 73.3 48.4 63.1
+       Q50.4 56.3 45.7 51.2
+       Q39.6 47.1 34.1 44.4
+       Q31.4 43.0 33.4 39.6
+       Q35.5 36.2 41.6 36.9
+       Q47.0 36.9 51.1 32.8
+       Q53.8 26.7 58.6 28.8
+       Q62 24.7 66.1 30.8
+       Q73.6 37.6 74.2 49.8
+       Q77.6 64.8 77.0 81.1
+       L76.3 85.9 Z"
+    fill="url(#oc-gold)"
+    stroke="#7a5518"
+    stroke-width="0.8"
+    stroke-linejoin="round"
+  />
+  <!-- mata -->
+  <circle cx="49" cy="44" r="2.1" fill="#0a0c12" />
+</svg>
