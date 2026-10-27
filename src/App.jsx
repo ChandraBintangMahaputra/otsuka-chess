@@ -12,7 +12,29 @@ const EMPTY = {
   SUMBER: '',
 }
 
-const SUMBER_OPSI = ['Instagram', 'WhatsApp', 'Teman', 'Poster', 'Departemen', 'Lainnya']
+const DEPARTEMEN_OPSI = [
+  'Prod - AL4',
+  'Prod - GBL',
+  'Prod - CAN-PET',
+  'Prod - Enmix',
+  'Prod - OC3',
+  'Prod - Sachet',
+  'Prod - Shrink',
+  'Engineering',
+  'QA',
+  'Office',
+  'Technical',
+  'SCM - Logistic WH',
+  'SCM - Logistic RMPM',
+  'Security',
+  'OCS',
+  'Rosendha',
+  'Proven Force Indonesia',
+  'Misuli',
+  'Intern',
+]
+
+const SUMBER_OPSI =['Instagram', 'WhatsApp', 'Teman', 'Poster', 'Departemen', 'Lainnya']
 
 export default function App() {
   const [form, setForm] = useState(EMPTY)
@@ -126,12 +148,14 @@ export default function App() {
                 </Field>
 
                 <Field label="Departemen">
-                  <input
-                    name="DEPARTEMEN"
-                    value={form.DEPARTEMEN}
-                    onChange={onChange}
-                    placeholder="cth. Produksi"
-                  />
+                  <select name="DEPARTEMEN" value={form.DEPARTEMEN} onChange={onChange}>
+                    <option value="">— Pilih —</option>
+                    {DEPARTEMEN_OPSI.map((d) => (
+                      <option key={d} value={d}>
+                        {d}
+                      </option>
+                    ))}
+                  </select>
                 </Field>
 
                 <Field label="Rating ELO" hint="Kosongkan jika belum ada">
