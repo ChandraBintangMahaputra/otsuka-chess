@@ -27,6 +27,7 @@ const DEPARTEMEN_OPSI = [
   'SCM - Logistic WH',
   'SCM - Logistic RMPM',
   'Security',
+  'EHS',
   'OCS',
   'Rosendha',
   'Proven Force Indonesia',
